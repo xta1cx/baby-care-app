@@ -21,6 +21,7 @@
 - Servlet
 - HTML / CSS
 - JSTL
+- H2
 
 ## 開発環境
 
