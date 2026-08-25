@@ -25,6 +25,10 @@
 - 記録の削除
 - データがない場合のメッセージ表示
 
+## 画面遷移図
+
+<img src="images/screen-flow.png" width="800">
+
 ## 使用技術
 
 - Java
