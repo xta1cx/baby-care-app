@@ -49,7 +49,7 @@
 - Web技術：Servlet / JSP / JSTL / EL式
 - サーバー：Apache Tomcat
 - バージョン管理：Git / GitHub
-- 
+
 ## 開発環境
 
 - Eclipse
