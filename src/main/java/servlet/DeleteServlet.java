@@ -20,17 +20,16 @@ public class DeleteServlet extends HttpServlet {
             throws ServletException, IOException {
 
         int id = Integer.parseInt(request.getParameter("id"));
-
-        System.out.println(id);
         
         HttpSession session = request.getSession();
 
         List<History> historyList =
                 (List<History>) session.getAttribute("historyList");
-        // 削除
+        
+        // 指定されたIDの履歴をリストから削除
         historyList.removeIf(history -> history.getId() == id);
         
-        // 履歴一覧画面へ戻る
+        // 削除後、履歴一覧画面へリダイレクト
         response.sendRedirect("history.jsp");
         }
  }

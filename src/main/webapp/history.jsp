@@ -7,16 +7,20 @@
 <meta charset="UTF-8">
 <link rel="stylesheet"
       href="${pageContext.request.contextPath}/css/style.css">
+      
 <title>履歴一覧</title>
 </head>
 <body>
 
+<%-- 履歴一覧のタイトル --%>
 <h1>📖 履歴一覧</h1>
 
+<%-- 入力画面へ戻る --%>
 <a href="${pageContext.request.contextPath}/input.jsp" class="back-button">
     ⬅ 入力画面へ戻る
 </a>
 
+<%-- 履歴がない場合 --%>
 <c:if test="${empty historyList}">
     <div class="no-history">
     🛸<br><br>
@@ -25,6 +29,7 @@
 </div>
 </c:if>
 
+<%-- 履歴一覧の表示 --%>
 <c:forEach var="history" items="${historyList}">
 
 <!-- 履歴カード -->
@@ -34,6 +39,7 @@
     📅 ${history.dateTime}
 </div>
 
+<%-- 履歴の種類を表示 --%>
 <div class="history-type">
 
 <c:choose>
@@ -53,25 +59,21 @@
     <c:otherwise>
         ${history.type}
     </c:otherwise>
-
 </c:choose>
-
 </div>
 
+<%-- 履歴の詳細 --%>
 <div class="history-detail">
     ${history.detail}
 </div>
-    
+
+<%-- 削除ボタン --%>
 <div class="delete-area">
-
 <form action="DeleteServlet" method="post">
-
 <input type="hidden"
        name="id"
        value="${history.id}">
-
 <input type="submit" value="🗑 削除 ">
-
 </form>
 
 </div>
