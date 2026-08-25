@@ -44,13 +44,12 @@
 
 ## 使用技術
 
-- Java
-- Servlet
-- JSP
-- JSTL
-- HTML
-- CSS
-
+- 言語：Java
+- フレームワーク：なし
+- Web技術：Servlet / JSP / JSTL / EL式
+- サーバー：Apache Tomcat
+- バージョン管理：Git / GitHub
+- 
 ## 開発環境
 
 - Eclipse
