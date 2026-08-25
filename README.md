@@ -27,7 +27,9 @@
 
 ## 画面遷移図
 
-<img src="images/screen-flow.png" width="500">
+## 画面遷移図
+
+![画面遷移図](./screen-flow.png)
 
 ## 使用技術
 
