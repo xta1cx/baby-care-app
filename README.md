@@ -46,7 +46,7 @@
 
 - 言語：Java
 - フレームワーク：なし
-- Web技術：Servlet / JSP / JSTL / EL式
+- Web技術：Servlet / JSP / JSTL / EL式　/ CSS / HTML
 - サーバー：Apache Tomcat
 - バージョン管理：Git / GitHub
 - 開発支援：ChatGPT
@@ -75,5 +75,4 @@ Java・Servlet・JSPなどの学習成果を活かし、実際の利用場面を
 - 記録の編集機能
 - 日ごとのトータルデータ表示
 - 入力内容のバリデーション強化
-- ログイン機能
 - ユーザーごとの記録管理
